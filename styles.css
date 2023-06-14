@@ -1,0 +1,17 @@
+p{
+    color:red;
+    padding: 10px;
+}
+
+h1{
+    font-size: 40px;
+    color:rgb(0, 0, 0);
+}
+
+#first{
+    margin-left: 50px;
+}
+
+.indented-div{
+    margin-left: 50px;
+}
