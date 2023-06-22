@@ -1,6 +1,7 @@
 p{
-    color: white;
-    background-color:black;
+    color:rgb(255, 255, 255);
+    background-color: black;
+    font-size:15px;
 }
 
 hr{
@@ -10,24 +11,11 @@ hr{
 
 h1{
     font-size: 40px;
-    color:gray;
+    color:rgb(0, 0, 0);
     margin:25px;
-}
-
-#list{
-    margin-left: 50px;
-    padding:10px;
-    color:rgb(117, 26, 160);
-    font-size:15px;
 }
 
 .indented-div{
     margin-left: 50px;
 }
 
-#square{
-    margin-left:50px;
-    background-color:blue;
-    width:256px;
-    height:256px;
-}
