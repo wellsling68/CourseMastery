@@ -1,11 +1,20 @@
-let title = document.querySelector("h1").innerHTML;
-let unordered = document.querySelector("ul").innerHTML;
-let ordered = document.querySelector("ol").innerHTML;
-let intro = document.querySelector("p").innerHTML;
+//input
+let textInput = document.querySelector("#text-input");
+let log = document.querySelector("#consoleLog");
+log.addEventListener("click", function(){
+    textInput.value = 20;
+    console.log(textInput.value);
+    sum = textInput.value;
+})
 
-let newArray = [title, unordered, ordered, intro];
-for (let i = 0; i<newArray.length; i++)
-{
-    if(newArray[i].length >=10)
-        console.log(newArray[i]);
-}
+let hide = document.querySelector("#hide");
+hide.addEventListener("click", function(){
+    hideable.style.display = "none";
+})
+
+let show = document.querySelector("#show");
+show.addEventListener("click", function(){
+    hideable.style.display = "block";
+})
+
+
