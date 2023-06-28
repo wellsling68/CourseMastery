@@ -25,6 +25,10 @@ span{
 
 #hideable{
     margin-left: 50px;
+    display:block;
 }
 
+#blue{
+    color:rgb(13, 130, 145)
+}
 
