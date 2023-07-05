@@ -26,24 +26,26 @@ consolelog.addEventListener("click", function(){
     }
 })
 
+let post_button = document.querySelector("#post");
+post_button.addEventListener("click", function(){
+    fetch("https://api.openai.com/v1/completions", {
+        method: 'POST',
+        body: JSON.stringify({
+            "model":"text-davinci-003",
+            "prompt": "Say hello to me.",
+            "temperature": 0.2,
+            "max_tokens": 20,
 
-
-let car = { brand: "honda", model: "civic", year: "2024", fuel: "gas"};
-
-for(prop in car)
-{
-    console.log(prop);
-    console.log(car[prop]);
-}
-
-
-let fetch_button = document.querySelector("#fetch");
-fetch_button.addEventListener("click", function() {
-    fetch('https://reqres.in/api/users')
-    .then(function(response){
-        return response.json();
-    }).then(function(data){
-        console.log(data);
+        }),
+        headers: {
+            'Content-type': 'application/json',
+            Authorization: "Bearer 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"
+        }
     })
-
-});
+    .then(response => {
+        return response.json();
+    }).then(data =>{
+        console.log(data.choices[0].text.replaceAll("\n", ""));
+    })
+    
+})
