@@ -106,6 +106,7 @@ hr{
     padding:.5em;
     border: 1.5px rgba(183, 183, 183, 0.992) solid;
     border-radius:6px;
+    box-shadow: 0px 0px 3px .1px rgba(183, 183, 183, 0.992);
     font-size:16px;
     font-family:Quicksand, serif;
     font-weight: 600;
@@ -118,6 +119,8 @@ hr{
 
 .test1:hover,.test2:hover,.test3:hover{
     color:rgba(183, 183, 183, 0.679);
+    border: 1.5px rgba(183, 183, 183, 0.679) solid;
+    box-shadow: 0px 0px 6px .1px rgba(183, 183, 183, 0.679);
 }
 
 #userInput{
@@ -128,7 +131,7 @@ hr{
     border: 1.5px #661ae6 solid;
     border-radius: 6px;
     height: 2.5vh;
-    width:60vw;
+    width:77.5vw;
     padding:1.75vh;
     display:block;
     text-align:justify;
